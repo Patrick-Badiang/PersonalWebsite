@@ -1,24 +1,37 @@
-import logo from './logo.svg';
+/**
+ * Navigation is a sidebar, clicks to go to specific part of  page
+ */
+
+import { ThemeProvider } from '@emotion/react';
 import './App.css';
+import Intro from './Intro/Intro';
+import { Box, CssBaseline, createTheme } from '@mui/material';
+import { themeOptions } from './ThemeOptions.tsx';
+import NewSection from './Section/NewSection.js';
+import Navigation from './Navigation/Navigation.js';
+import AboutMe from './DifferentSections/AboutMe.js';
+import NewProject from './Section/NewProject.js';
+import Contact from './Section/Contact.js';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  
+  const  theme = createTheme(themeOptions);
+return (
+    <ThemeProvider theme = {theme}>
+      <CssBaseline/>
+        <Intro/>
+        <Navigation/>
+        <Box sx = {{height: 400}}/>
+        <NewSection title = "About Me" element = {<AboutMe/>}/>
+
+        <NewSection title = "Projects" element = {<NewProject/>}/>
+
+        <NewSection title = "Contact Me" element = {<Contact/>}/>
+    </ThemeProvider>
+      
+
+    
   );
 }
 
