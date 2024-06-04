@@ -31,7 +31,7 @@ function App() {
   };
 
   const theme = createTheme(themeOptions);
-  const isMediumScreen = useMediaQuery((theme) => theme.breakpoints.down('md'));
+  
 
 
   return (
@@ -48,7 +48,7 @@ function App() {
         ref3={sectionRef3}
       />
 
-      <Box sx={{ height: isMediumScreen ? "100px" : "500px" }} />
+      
       <div ref={sectionRef1}>
         <NewSection
           title="About Me"

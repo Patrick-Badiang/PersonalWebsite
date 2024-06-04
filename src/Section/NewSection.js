@@ -39,7 +39,7 @@ const NewSection = (props) => {
 
       {props.element}
 
-      <Box sx={{ height: 200 }} />
+      <Box sx={{ height: 50 }} />
     </div>
   );
 };

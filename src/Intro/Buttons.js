@@ -11,7 +11,6 @@ function Buttons() {
 
   return (
     <div style={centerDivStyle}>
-      <ButtonGroup>
         <Button
           variant="contained"
           color="primary"
@@ -21,11 +20,10 @@ function Buttons() {
           rel="noopener noreferrer"
           sx={{ textTransform: "none" }} // Optional: to prevent text from being capitalized
         >
-          <Typography variant="body1">
-            Resume <ArrowRightIcon />
-          </Typography>
+          
+            Resume <ArrowRightIcon fontSize = "small"/>
+          
         </Button>
-      </ButtonGroup>
     </div>
   );
 }

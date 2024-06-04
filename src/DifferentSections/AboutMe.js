@@ -37,12 +37,11 @@ function AboutMe(){
             <Grid xs/>
             <Grid  container xs = {12}>
                 <Grid xs/>
-                <Grid xs>
+                <Grid xs = {5}>
                 <Card elevation={5} sx = {{
-                    borderRadius: '50px', 
+                    borderRadius: '10px', 
                     maxHeight: "678px",
-                    maxWidth: "626px",
-                    mt: "40px"}}>
+                    maxWidth: "626px",}}>
                     <CardActionArea>
                         <CardMedia
                         component="img"

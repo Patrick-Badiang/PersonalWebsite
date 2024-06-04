@@ -47,7 +47,7 @@ const TitleCard = (props) => {
                 <Grid item xs />
                 <Grid item xs={5}>
                   <Typography variant="h2">
-                    {props.title} <CallMadeIcon />
+                    {props.title} <CallMadeIcon sx = {{fontSize: 10}}/>
                   </Typography>
                   <Typography variant="body1">{props.dev}</Typography>        
                   <Box display="flex" flexDirection="row" alignItems="center">
@@ -121,7 +121,7 @@ const TitleCard = (props) => {
                 <Grid item xs />
                 <Grid item xs={5}>
                   <Typography variant="h2">
-                    {props.title} <CallMadeIcon />
+                    {props.title} <CallMadeIcon sx = {{fontSize: 10}}/>
                   </Typography>
                   <Typography variant="body1">{props.dev}</Typography>        
                   <Box display="flex" flexDirection="row" alignItems="center">

@@ -109,8 +109,19 @@ export const themeOptions: ThemeOptions = {
     },
 
     h5: {
-      fontSize: '0.25rem',
-      fontWeight:10
+      fontSize: '0.5rem',
+      fontWeight:10,
+      '@media (min-width:600px)': {
+        fontSize: '0.5rem',   // Extra-small devices (phones)
+        
+      },
+      '@media (min-width:960px)' : {
+        fontSize: '1rem',   // Medium devices (desktops)
+      },
+      '@media (min-width:1280px)' : {
+        fontSize: '2rem',   // Large devices (large desktops)
+
+      }
 
     },
 

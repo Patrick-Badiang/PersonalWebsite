@@ -11,9 +11,13 @@ import Icon from '@mui/icons-material/ExpandMore';
 
 const Navigation = ({ onScrollToSection, ref1, ref2, ref3 }) => {
 
-  const isMediumScreen = useMediaQuery((theme) => theme.breakpoints.down('md'));
+  const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down('sm'));
+const isMediumScreen = useMediaQuery((theme) => theme.breakpoints.between('sm', 'md'));
+const isLargeScreen = useMediaQuery((theme) => theme.breakpoints.up('lg'));
+
   
   return (
+    <>
     <div
       style={{
         position: "absolute",
@@ -24,7 +28,7 @@ const Navigation = ({ onScrollToSection, ref1, ref2, ref3 }) => {
       <Grid container xs={12} spacing={3}>
         <Grid xs />
         <Grid item xs={3}>
-          <Card elevation={5} sx={{borderRadius: isMediumScreen ? "20px" : "50px" }} >
+          <Card elevation={5} sx={{borderRadius: isSmallScreen ? "10px" : isMediumScreen ? "20px" : "50px" }} >
             <CardActionArea onClick={() => onScrollToSection(ref1)}>
               <CardMedia
                 component="img"
@@ -58,7 +62,8 @@ const Navigation = ({ onScrollToSection, ref1, ref2, ref3 }) => {
         </Grid>
         <Grid xs />
         <Grid item xs={3}>
-          <Card elevation={5} sx={{ borderRadius: isMediumScreen ? "20px" : "50px" }} onClick={() => onScrollToSection(ref2)}>
+          <Card elevation={5} sx={{ borderRadius: isSmallScreen ? "10px" : isMediumScreen ? "20px" : "50px"  }} 
+          onClick={() => onScrollToSection(ref2)}>
             <CardActionArea >
               <CardMedia
                 component="img"
@@ -93,7 +98,8 @@ const Navigation = ({ onScrollToSection, ref1, ref2, ref3 }) => {
         </Grid>
         <Grid xs />
         <Grid item xs={3}>
-          <Card elevation={5} sx={{ borderRadius: isMediumScreen ? "20px" : "50px"  }}  onClick={() => onScrollToSection(ref3)}>
+          <Card elevation={5} sx={{ borderRadius: isSmallScreen ? "10px" : isMediumScreen ? "20px" : "50px"  }}  
+          onClick={() => onScrollToSection(ref3)}>
             <CardActionArea >
               <CardMedia
                 component="img"
@@ -128,6 +134,8 @@ const Navigation = ({ onScrollToSection, ref1, ref2, ref3 }) => {
         <Grid xs />
       </Grid>
     </div>
+    <Box sx = {{height: isSmallScreen ? "100px" : isMediumScreen ? "200px" : "300px"}}/>
+    </>
   );
 }
 
