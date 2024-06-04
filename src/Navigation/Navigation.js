@@ -32,7 +32,7 @@ const Navigation = ({ onScrollToSection, ref1, ref2, ref3 }) => {
               <CardMedia
                 component="img"
                 maxHeight="500"
-                image="/pictures/Aboutme.jpeg"
+                image="pictures/Aboutme.jpeg"
               />
               <Box
                 sx={{
@@ -66,7 +66,7 @@ const Navigation = ({ onScrollToSection, ref1, ref2, ref3 }) => {
               <CardMedia
                 component="img"
                 maxHeight="500"
-                image="/pictures/Projects.JPG"
+                image="pictures/Projects.JPG"
               />
               <Box
                 sx={{
@@ -101,7 +101,7 @@ const Navigation = ({ onScrollToSection, ref1, ref2, ref3 }) => {
               <CardMedia
                 component="img"
                 maxHeight="500"
-                image="/pictures/Contact.JPG"
+                image="pictures/Contact.JPG"
               />
               <Box
                 sx={{

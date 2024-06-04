@@ -22,7 +22,7 @@ function AboutMe(){
                             <CardMedia
                             component="img"
                             
-                            image = "/pictures/ProfilePic.png"/>
+                            image = "pictures/ProfilePic.png"/>
                         </CardActionArea>
                     </Card>
                     
