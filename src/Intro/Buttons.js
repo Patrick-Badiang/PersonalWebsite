@@ -21,9 +21,9 @@ function Buttons(){
       rel="noopener noreferrer"
       sx={{ textTransform: 'none' }} // Optional: to prevent text from being capitalized
     >
-                    <Typography variant="body1">
+                    {/* <Typography variant="body1">
                         Resume <ArrowRightIcon/>
-                    </Typography>
+                    </Typography> */}
                 </Button>
             </ButtonGroup>
         </div>

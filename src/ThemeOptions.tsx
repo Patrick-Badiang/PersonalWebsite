@@ -18,6 +18,17 @@ export const themeOptions: ThemeOptions = {
       main: '#cb6a6a',
     },
   },
+
+  breakpoints: {
+    // Add your custom breakpoints here
+    values: {
+      xs: 0,       // Mobile phones
+      sm: 600,     // Tablets
+      md: 960,     // Small laptops
+      lg: 1280,    // Medium laptops
+      xl: 1920,    // Large laptops and desktops
+    },
+  },
   typography: {
     fontFamily: 'Inria Serif',
     h1: {
@@ -38,15 +49,37 @@ export const themeOptions: ThemeOptions = {
       fontSize: '5.0rem',
     },
 
+    h4: {
+      fontSize: '2.0rem'
+    },
+
     body1: {
-      fontWeight: 10,
-      fontSize: '1.375rem',
+      fontSize: '1rem',
+      '@media (min-width:600px)': {
+        fontSize: '0.7rem',   // Extra-small devices (phones)
+        
+      },
+      '@media (min-width:960px)' : {
+        fontSize: '1rem',   // Medium devices (desktops)
+      },
+      '@media (min-width:1280px)' : {
+        fontSize: '1rem',   // Large devices (large desktops)
+
+      }
+      
+
     },
 
     body2: {
       fontFamily: 'Jura',
       fontSize: '1.375rem',
-    }
+    },
+
+    h5: {
+      fontSize: '0.25rem',
+      fontWeight:10
+
+    },
 
 
     

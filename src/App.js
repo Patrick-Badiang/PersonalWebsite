@@ -5,7 +5,7 @@
 import { ThemeProvider } from "@emotion/react";
 import "./App.css";
 import Intro from "./Intro/Intro";
-import { Box, CssBaseline, createTheme } from "@mui/material";
+import { Box, CssBaseline, TextField, createTheme } from "@mui/material";
 import { themeOptions } from "./ThemeOptions.tsx";
 import NewSection from "./Section/NewSection.js";
 import Navigation from "./Navigation/Navigation.js";
@@ -13,6 +13,9 @@ import AboutMe from "./DifferentSections/AboutMe.js";
 import NewProject from "./Section/NewProject.js";
 import Contact from "./Section/Contact.js";
 import { useRef } from "react";
+
+import 'resize-observer-polyfill/dist/ResizeObserver.global';
+
 
 function App() {
   const topRef = useRef(null);
@@ -28,6 +31,7 @@ function App() {
   };
 
   const theme = createTheme(themeOptions);
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -60,7 +64,7 @@ function App() {
           top={topRef}
         />
       </div>
-
+      
       <div ref={sectionRef3}>
         <NewSection
           title="Contact Me"

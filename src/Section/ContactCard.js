@@ -48,7 +48,7 @@ function ContactCard() {
         <CardContent>
           <Grid container direction={"column"} spacing={4}>
             <Grid item>
-              <Typography>Name</Typography>
+              <Typography variant="body1">Name</Typography>
               <TextField
                 fullWidth
                 id="outlined-basic"
@@ -56,28 +56,32 @@ function ContactCard() {
                 variant="outlined"
                 type = "text"
                 name="user_name"
+                size = "small"
+
               />
             </Grid>
             <Grid item>
-              <Typography>Email</Typography>
+              <Typography  variant="body1">Email</Typography>
               <TextField
                 fullWidth
                 id="outlined-basic"
-                label="Enter Your Email"
                 variant="outlined"
+                label="Enter Your Email"
                 type="email" name="user_email"
+                size = "small"
               />
             </Grid>
 
             <Grid item>
-              <Typography>Message</Typography>
+              <Typography variant="body1">Message</Typography>
               <TextField
                 fullWidth
-                multiline
-                id="outlined-basic"
-                label="Enter Your Message"
+                id="outlined-multiline-static"
                 variant="outlined"
                 name="message"
+                size = "small"
+                label="Enter Your Message"
+
                 rows={5}
               />
             </Grid>
@@ -100,7 +104,7 @@ function ContactCard() {
       </Paper>
       </form>
       <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
-        <Alert severity="success" icon={<CheckIcon fontSize="inherit" />}>
+        <Alert severity="success" icon={<CheckIcon fontSize="body1" />}>
           Here is a gentle confirmation that your action was successful.
         </Alert>
       </Snackbar>
