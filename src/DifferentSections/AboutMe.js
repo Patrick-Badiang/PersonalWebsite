@@ -2,7 +2,7 @@
  * Is title and has line underneath
  */
 
-import { Box, Card, CardActionArea, CardMedia, Typography } from "@mui/material";
+import { Card, CardActionArea, CardMedia, Typography } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 
 function AboutMe(){

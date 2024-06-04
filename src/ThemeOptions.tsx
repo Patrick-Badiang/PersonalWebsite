@@ -7,11 +7,11 @@ export const themeOptions: ThemeOptions = {
       main: '#FFD3AB',
     },
     secondary: {
-      main: '#43000d',
+      main: '#9ACCD3',
     },
     divider: '#FFBF46',
     background: {
-      paper: '#9DC0E9',
+      paper: '#FAF0ED',
       default: '#FFFBFA',
     },
     error: {

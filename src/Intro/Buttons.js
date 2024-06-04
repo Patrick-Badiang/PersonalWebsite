@@ -1,6 +1,6 @@
 import { Button, ButtonGroup, Typography } from "@mui/material";
 
-
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 
 function Buttons(){
     const centerDivStyle = {
@@ -22,7 +22,7 @@ function Buttons(){
       sx={{ textTransform: 'none' }} // Optional: to prevent text from being capitalized
     >
                     <Typography variant="body1">
-                        Resume
+                        Resume <ArrowRightIcon/>
                     </Typography>
                 </Button>
             </ButtonGroup>

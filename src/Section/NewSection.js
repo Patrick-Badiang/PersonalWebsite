@@ -2,46 +2,46 @@
  * Is title and has line underneath
  */
 
-import { Box, Typography } from "@mui/material";
+import { Box, IconButton, Typography } from "@mui/material";
+import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
 
-const NewSection = (props) =>{
-    
-    const centerDivStyle = {
-        display: 'flex',
-        justifyContent: 'center',
-        alignContent: 'center',
-    }
+const NewSection = (props) => {
+  const centerDivStyle = {
+    display: "flex",
+    justifyContent: "center",
+    alignContent: "center",
+  };
 
-    return(
-        <>
-            
-            <Typography variant="h3" style={centerDivStyle}>
-                {props.title}
-            </Typography>
+  const handleButtonClick = (sectionRef) => {
+    props.onScrollToSection(sectionRef); // Call the passed-down function
+  };
 
-            <div style={centerDivStyle}>
-                <Box sx ={{
-                    width: '60vw',
-                    height: 10,
-                    bgcolor: '#A8D5E2',
-                    mb: '50px'
-                }}/>
-            </div>
+  return (
+    <div id={props.ref}>
+      <Typography variant="h3" style={centerDivStyle}>
+        {props.title}
 
-                {props.element}
-            
-            <Box sx = {{height: 200}}/>
-                
-               
+        <IconButton onClick={() => handleButtonClick(props.top)}>
+          <ArrowDropUpIcon />
+        </IconButton>
+      </Typography>
 
-                
-                     
-                      
-                    
-                
-            
-        </>
-    );
-}
+      <div style={centerDivStyle}>
+        <Box
+          sx={{
+            width: "60vw",
+            height: 10,
+            bgcolor: "#A8D5E2",
+            mb: "50px",
+          }}
+        />
+      </div>
+
+      {props.element}
+
+      <Box sx={{ height: 200 }} />
+    </div>
+  );
+};
 
 export default NewSection;
