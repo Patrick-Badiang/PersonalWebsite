@@ -35,7 +35,9 @@ function AboutMe(){
                 </Typography>
             </Grid>
             <Grid xs/>
-            <Grid  item xs = {6}>
+            <Grid  container xs = {12}>
+                <Grid xs/>
+                <Grid xs>
                 <Card elevation={5} sx = {{
                     borderRadius: '50px', 
                     maxHeight: "678px",
@@ -48,6 +50,8 @@ function AboutMe(){
                         image = "pictures/ProfilePic.png"/>
                     </CardActionArea>
                 </Card>
+                </Grid>
+                <Grid xs/>
                 
             </Grid>
         </Grid>  

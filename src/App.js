@@ -5,7 +5,7 @@
 import { ThemeProvider } from "@emotion/react";
 import "./App.css";
 import Intro from "./Intro/Intro";
-import { Box, CssBaseline, TextField, createTheme } from "@mui/material";
+import { Box, CssBaseline, TextField, createTheme, useMediaQuery } from "@mui/material";
 import { themeOptions } from "./ThemeOptions.tsx";
 import NewSection from "./Section/NewSection.js";
 import Navigation from "./Navigation/Navigation.js";
@@ -31,6 +31,8 @@ function App() {
   };
 
   const theme = createTheme(themeOptions);
+  const isMediumScreen = useMediaQuery((theme) => theme.breakpoints.down('md'));
+
 
   return (
     <ThemeProvider theme={theme}>
@@ -46,7 +48,7 @@ function App() {
         ref3={sectionRef3}
       />
 
-      <Box sx={{ height: 400 }} />
+      <Box sx={{ height: isMediumScreen ? "100px" : "500px" }} />
       <div ref={sectionRef1}>
         <NewSection
           title="About Me"

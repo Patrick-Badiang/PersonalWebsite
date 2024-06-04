@@ -34,19 +34,52 @@ export const themeOptions: ThemeOptions = {
     h1: {
       fontFamily: 'Jura',
       fontWeight: 400,
-      fontSize: '4.0rem',
+      fontSize: '1rem',
+      '@media (min-width:600px)': {
+        fontSize: '1rem',   // Extra-small devices (phones)
+        
+      },
+      '@media (min-width:960px)' : {
+        fontSize: '2rem',   // Medium devices (desktops)
+      },
+      '@media (min-width:1280px)' : {
+        fontSize: '4.0rem',   // Large devices (large desktops)
+
+      }
     },
 
     h2: {
       fontFamily: 'Itim',
       fontWeight: 10,
-      fontSize: '2.0 rem',
+      fontSize: '1.0 rem',
+      '@media (min-width:600px)': {
+        fontSize: '0.5rem',   // Extra-small devices (phones)
+        
+      },
+      '@media (min-width:960px)' : {
+        fontSize: '1rem',   // Medium devices (desktops)
+      },
+      '@media (min-width:1280px)' : {
+        fontSize: '2.0rem',   // Large devices (large desktops)
+
+      }
     },
 
     h3: {
       fontFamily: 'Italiana',
       fontWeight: 100,
-      fontSize: '5.0rem',
+      fontSize: '1.25rem',
+      '@media (min-width:600px)': {
+        fontSize: '1.25rem',   // Extra-small devices (phones)
+        
+      },
+      '@media (min-width:960px)' : {
+        fontSize: '2.5rem',   // Medium devices (desktops)
+      },
+      '@media (min-width:1280px)' : {
+        fontSize: '5.0rem',   // Large devices (large desktops)
+
+      }
     },
 
     h4: {
@@ -54,7 +87,7 @@ export const themeOptions: ThemeOptions = {
     },
 
     body1: {
-      fontSize: '1rem',
+      fontSize: '0.7rem',
       '@media (min-width:600px)': {
         fontSize: '0.7rem',   // Extra-small devices (phones)
         
@@ -63,7 +96,7 @@ export const themeOptions: ThemeOptions = {
         fontSize: '1rem',   // Medium devices (desktops)
       },
       '@media (min-width:1280px)' : {
-        fontSize: '1rem',   // Large devices (large desktops)
+        fontSize: '1.3rem',   // Large devices (large desktops)
 
       }
       

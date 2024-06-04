@@ -4,18 +4,15 @@ import {
   CardActionArea,
   CardMedia,
   Typography,
+  useMediaQuery,
 } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import Icon from '@mui/icons-material/ExpandMore';
 
-
 const Navigation = ({ onScrollToSection, ref1, ref2, ref3 }) => {
 
+  const isMediumScreen = useMediaQuery((theme) => theme.breakpoints.down('md'));
   
-
-  
-
-
   return (
     <div
       style={{
@@ -27,7 +24,7 @@ const Navigation = ({ onScrollToSection, ref1, ref2, ref3 }) => {
       <Grid container xs={12} spacing={3}>
         <Grid xs />
         <Grid item xs={3}>
-          <Card elevation={5} sx={{ borderRadius: "50px" }} >
+          <Card elevation={5} sx={{borderRadius: isMediumScreen ? "20px" : "50px" }} >
             <CardActionArea onClick={() => onScrollToSection(ref1)}>
               <CardMedia
                 component="img"
@@ -61,7 +58,7 @@ const Navigation = ({ onScrollToSection, ref1, ref2, ref3 }) => {
         </Grid>
         <Grid xs />
         <Grid item xs={3}>
-          <Card elevation={5} sx={{ borderRadius: "50px" }} onClick={() => onScrollToSection(ref2)}>
+          <Card elevation={5} sx={{ borderRadius: isMediumScreen ? "20px" : "50px" }} onClick={() => onScrollToSection(ref2)}>
             <CardActionArea >
               <CardMedia
                 component="img"
@@ -96,7 +93,7 @@ const Navigation = ({ onScrollToSection, ref1, ref2, ref3 }) => {
         </Grid>
         <Grid xs />
         <Grid item xs={3}>
-          <Card elevation={5} sx={{ borderRadius: "50px" }}  onClick={() => onScrollToSection(ref3)}>
+          <Card elevation={5} sx={{ borderRadius: isMediumScreen ? "20px" : "50px"  }}  onClick={() => onScrollToSection(ref3)}>
             <CardActionArea >
               <CardMedia
                 component="img"
