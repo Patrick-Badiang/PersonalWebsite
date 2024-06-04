@@ -28,7 +28,7 @@ function Intro(){
        
         
     }}>
-        <img src ='public/pictures/LandingPage.png'
+        <img src ='https://raw.githubusercontent.com/Patrick-Badiang/PersonalWebsite/main/public/pictures/LandingPage.png'
         alt = 'cover'
         style = {{
             width: '100%',
