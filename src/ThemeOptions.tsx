@@ -109,10 +109,10 @@ export const themeOptions: ThemeOptions = {
     },
 
     h5: {
-      fontSize: '0.5rem',
+      fontSize: '1rem',
       fontWeight:10,
       '@media (min-width:600px)': {
-        fontSize: '0.5rem',   // Extra-small devices (phones)
+        fontSize: '0.8rem',   // Extra-small devices (phones)
         
       },
       '@media (min-width:960px)' : {
