@@ -11,7 +11,7 @@
  */
 
 import { Typography } from '@mui/material';
-import Buttons from './Buttons';
+// import Buttons from './Buttons';
 import React from 'react';
 
 
@@ -37,7 +37,7 @@ function Intro(){
          } }
         />
     
-    <div style={{
+    {/* <div style={{
         position: 'absolute',
         top: '0',
         right: '10%',
@@ -45,7 +45,7 @@ function Intro(){
         <Buttons style={{
             margin: '0 auto', // Center the Buttons horizontally
         }}/>
-    </div>
+    </div> */}
     
     <div style = {{
         position: 'absolute',
