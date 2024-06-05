@@ -94,8 +94,8 @@ function ContactCard() {
                 }}
               >
                 <Button color="secondary" variant="contained"
-                type="submit" value="Send">
-                  Submit -<SendIcon />
+                type="submit" value="Send" >
+                  Submit <SendIcon sx = {{marginLeft: "10px"}} />
                 </Button>
               </div>
             </Grid>
