@@ -48,6 +48,15 @@ function App() {
         ref3={sectionRef3}
       />
 
+<div ref={sectionRef2}>
+        <NewSection
+          title="Projects"
+          element={<NewProject />}
+          onScrollToSection={handleScrollToSection}
+          top={topRef}
+        />
+      </div>
+
       
       <div ref={sectionRef1}>
         <NewSection
@@ -58,14 +67,7 @@ function App() {
         />
       </div>
 
-      <div ref={sectionRef2}>
-        <NewSection
-          title="Projects"
-          element={<NewProject />}
-          onScrollToSection={handleScrollToSection}
-          top={topRef}
-        />
-      </div>
+      
       
       <div ref={sectionRef3}>
         <NewSection

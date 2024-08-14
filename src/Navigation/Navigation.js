@@ -18,13 +18,6 @@ const isLargeScreen = useMediaQuery((theme) => theme.breakpoints.up('lg'));
   
   return (
     <>
-    <div
-      style={{
-        position: "absolute",
-        width: "100%",
-        transform: "translateY(-50%)",
-      }}
-    >
       <Grid container xs={12} spacing={3}>
         <Grid xs />
         <Grid item xs={3}>
@@ -133,7 +126,6 @@ const isLargeScreen = useMediaQuery((theme) => theme.breakpoints.up('lg'));
         </Grid>
         <Grid xs />
       </Grid>
-    </div>
     <Box sx = {{height: isSmallScreen ? "100px" : isMediumScreen ? "200px" : "300px"}}/>
     </>
   );
