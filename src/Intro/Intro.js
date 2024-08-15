@@ -15,9 +15,7 @@ import {
   Button,
   Card,
   CardContent,
-  CardMedia,
   IconButton,
-  Link,
   Typography,
 } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
@@ -31,6 +29,8 @@ import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
+
+import Pdf from "../Documents/Resume.pdf";
 
 function Intro() {
   //Gif
@@ -59,7 +59,7 @@ function Intro() {
               >
                 <img
                   src="pictures/ProfilePic.png"
-                  alt="Image description"
+                  alt="Profile Pic"
                   style={{
                     borderRadius: "24px",
                     position: "absolute",
@@ -78,8 +78,8 @@ function Intro() {
               </Typography>
               {/* //Email with Email Icon*/}
               <Grid container direction={"row"}>
-                <EmailIcon sx={{ mr: "5px", mt: "3px", color: "white" }} />
-                <Typography textAlign={"start"}>
+                <EmailIcon sx={{ mr: "5px", mt: "3px", color: "white"}}/>
+                <Typography textAlign={"start"} variant = "body1">
                   patrick.vyn.llanto@gmail.com
                 </Typography>
               </Grid>
@@ -94,14 +94,26 @@ function Intro() {
               {/* //Icon Buttons */}
               <div style={{ marginTop: "15px" }}>
                 <Grid container direction={"row"} justifyContent={"start"}>
-                  <IconButton aria-label="Example">
-                    <LinkedInIcon />
+                  <IconButton 
+                  href="https://www.linkedin.com/in/patrick-vyn-badiang/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Example">
+                    <LinkedInIcon sx = {{color: "#000000"}} fontSize="large"/>
                   </IconButton>
-                  <IconButton aria-label="Example">
-                    <InstagramIcon />
+                  <IconButton 
+                  href="https://www.instagram.com/patrick.vyn/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Example">
+                    <InstagramIcon sx = {{color: "#000000"}} fontSize="large"/>
                   </IconButton>
-                  <IconButton aria-label="Example">
-                    <GitHubIcon />
+                  <IconButton 
+                   href="https://github.com/Patrick-Badiang"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                  aria-label="Example">
+                    <GitHubIcon sx = {{color: "#000000"}} fontSize="large"/>
                   </IconButton>
                 </Grid>
               </div>
@@ -120,7 +132,11 @@ function Intro() {
                 </Typography>
               </Grid>
               <Box sx={{ bgcolor: "#D9D9D9", borderRadius: "24px" }} >
-                <Button startIcon={<FileDownloadIcon sx = {{color: "#000000", ml: "10px"}}/>}>
+                <Button 
+                href= {Pdf}
+                target="_blank"
+                rel="noopener noreferrer"
+                startIcon={<FileDownloadIcon sx = {{color: "#000000", ml: "10px"}}/>}>
                   <Typography color = "#000000" sx ={{mr: "10px"}}>
                   Resume
                   </Typography>

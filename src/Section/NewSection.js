@@ -2,50 +2,34 @@
  * Is title and has line underneath
  */
 
-import { Box, IconButton, Typography } from "@mui/material";
-import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
+import { Box, Typography } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 
 const NewSection = (props) => {
-  const centerDivStyle = {
-    display: "flex",
-    justifyContent: "start",
-    alignContent: "center",
-  };
+  
 
-  const handleButtonClick = (sectionRef) => {
-    props.onScrollToSection(sectionRef); // Call the passed-down function
-  };
+  
 
   return (
     <div id={props.ref} style = {{marginTop: '10px'}}>
       <Grid container direction={"row"} spacing={2} xs = {12}>
         <Grid item xs ={3}/>
-        <Grid item xs>
+        <Grid item xs = {1.5}>
       <Typography variant="h5" ml={2}>
         {props.title}
       </Typography>
-      </Grid>
-      </Grid>
-      
-
-      <div style={centerDivStyle}>
-        <Grid container direction={"row"} spacing={2} xs = {12}>
-        <Grid item xs ={3}/>
-        <Grid item xs>
-        <Box
+      <Box
           sx={{
-            width: "10vw",
+            width: "100%",
             height: 2,
             bgcolor: "#FFD3AB",
             mb: "30px",
           }}
         />
       </Grid>
+      <Grid xs/>
+      </Grid>
       
-        </Grid>
-       
-      </div>
 
       {props.element}
 
