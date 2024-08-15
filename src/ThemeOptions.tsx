@@ -4,15 +4,18 @@ export const themeOptions: ThemeOptions = {
   palette: {
     mode: 'light',
     primary: {
-      main: '#FFD3AB',
+      main: '#FFFFFF',
     },
     secondary: {
-      main: '#9ACCD3',
+      main: '#4F524D',
+    },
+    text: {
+      primary: 'rgba(255,255,255,0.87)',
     },
     divider: '#FFBF46',
     background: {
-      paper: '#FAF0ED',
-      default: '#FFFBFA',
+      paper: '#4F524D',
+      default: '#4E684D',
     },
     error: {
       main: '#cb6a6a',
@@ -96,7 +99,7 @@ export const themeOptions: ThemeOptions = {
         fontSize: '1rem',   // Medium devices (desktops)
       },
       '@media (min-width:1280px)' : {
-        fontSize: '1.3rem',   // Large devices (large desktops)
+        fontSize: '1rem',   // Large devices (large desktops)
 
       }
       

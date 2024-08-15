@@ -22,7 +22,7 @@ const TitleCard = (props) => {
         elevation={0}
         sx={{
           height: "40vh",
-          backgroundColor: "#FFFBFA",
+          backgroundColor: "#4E684D",
           borderRadius: "20px",
         }}
       >
@@ -101,12 +101,11 @@ const TitleCard = (props) => {
             sx={{ ml: "10px" }}
             spacing={2}
           >
-            <Grid item xs={5}>
+            <Grid item xs={6}>
               <Card
                 sx={{
                   borderRadius: "10px",
-                  maxWidth: "430px",
-                  maxHeight: "242px",
+                  aspectRatio: "271/153",
                   backgroundColor: props.color,
                   display: "flex",
                   justifyContent: "center",
@@ -116,7 +115,7 @@ const TitleCard = (props) => {
                 <CardMedia component="img" image={props.image} />
               </Card>
             </Grid>
-            <Grid item xs={7}>
+            <Grid item xs={6}>
               <Grid container direction={"column"} xs>
                 <Grid item xs />
                 <Grid item xs={5}>

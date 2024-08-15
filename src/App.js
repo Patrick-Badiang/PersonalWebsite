@@ -41,12 +41,12 @@ function App() {
         <Intro />
       </div>
 
-      <Navigation
+      {/* <Navigation
         onScrollToSection={handleScrollToSection} // Pass scroll function as a prop
         ref1={sectionRef1}
         ref2={sectionRef2}
         ref3={sectionRef3}
-      />
+      /> */}
 
 <div ref={sectionRef2}>
         <NewSection
@@ -59,23 +59,13 @@ function App() {
 
       
       <div ref={sectionRef1}>
-        <NewSection
-          title="About Me"
-          element={<AboutMe />}
-          onScrollToSection={handleScrollToSection}
-          top={topRef}
-        />
+        
       </div>
 
       
       
       <div ref={sectionRef3}>
-        <NewSection
-          title="Contact Me"
-          element={<Contact />}
-          onScrollToSection={handleScrollToSection}
-          top={topRef}
-        />
+        
       </div>
     </ThemeProvider>
   );

@@ -75,7 +75,7 @@ const NewProject = (props) => {
         ): (
           <Grid container xs={12} spacing={5} rowSpacing={5}>
           <Grid xs />
-          <Grid xs={8}>
+          <Grid xs={6}>
             <TitleCard
               link="https://vtfasa.org"
               logo="pictures/vtfasaLogo.png"
@@ -84,6 +84,7 @@ const NewProject = (props) => {
               image="pictures/vtfasa.png"
               frame = {["React", "MaterialUi"]}
             />
+          
             <TitleCard
               link="https://www.youtube.com/@kubergames3410"
               logo="pictures/KuberGamingLogo.png"
