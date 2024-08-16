@@ -17,7 +17,6 @@ import 'resize-observer-polyfill/dist/ResizeObserver.global.js';
 function App() {
   const topRef = useRef(null);
   const sectionRef1 = useRef(null);
-  const sectionRef2 = useRef(null);
   const sectionRef3 = useRef(null);
 
   const handleScrollToSection = (sectionRef) => {
