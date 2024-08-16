@@ -34,6 +34,6 @@ jobs:
       env:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
       run: |
-        git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+        git remote set-url origin https://git:${{secrets.GH_TOKEN}}@github.com/${{github.repository}}.git
         npx gh-pages -d build -u "github-actions-bot <support+actions@github.com>"
       
