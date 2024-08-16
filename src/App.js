@@ -11,7 +11,7 @@ import NewSection from "./Section/NewSection.js";
 import NewProject from "./Section/NewProject.js";
 import { useRef } from "react";
 
-import 'resize-observer-polyfill/dist/ResizeObserver.global';
+import 'resize-observer-polyfill/dist/ResizeObserver.global.js';
 
 
 function App() {
