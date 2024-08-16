@@ -3,6 +3,7 @@
   "name": "my-website",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
     "@emotion/react": "^11.11.4",
@@ -20,7 +21,6 @@
     "styled-components": "^6.1.8",
     "web-vitals": "^2.1.4"
   },
-  "type": "module",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
@@ -47,7 +47,13 @@
       "last 1 safari version"
     ]
   },
+  "jest": {
+    "transform": {
+      "^.+\\.(js|jsx)$": "babel-jest"
+    }
+  },
   "devDependencies": {
+    "@babel/core": "^7.25.2",
     "@babel/plugin-transform-modules-commonjs": "^7.24.8",
     "@babel/preset-env": "^7.25.3",
     "gh-pages": "^6.1.1"

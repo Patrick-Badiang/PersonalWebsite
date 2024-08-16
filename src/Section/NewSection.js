@@ -5,13 +5,14 @@
 import { Box, Typography } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 
+
 const NewSection = (props) => {
   
 
   
 
   return (
-    <div id={props.ref} style = {{marginTop: '10px'}}>
+    <div  style = {{marginTop: '10px'}}>
       <Grid container direction={"row"} spacing={2} xs = {12}>
         <Grid item xs ={3}/>
         <Grid item xs = {1.5}>
