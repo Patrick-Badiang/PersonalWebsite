@@ -23,13 +23,13 @@ import Grid from "@mui/material/Unstable_Grid2";
 // import Buttons from './Buttons';
 import React from "react";
 
-import EmailIcon from "@mui/icons-material/Email";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-import FileDownloadIcon from "@mui/icons-material/FileDownload";
+import EmailIcon from "@mui/icons-material/Email.js";
+import LocationOnIcon from "@mui/icons-material/LocationOn.js";
+import FileDownloadIcon from "@mui/icons-material/FileDownload.js";
 
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn.js";
+import GitHubIcon from "@mui/icons-material/GitHub.js";
+import InstagramIcon from "@mui/icons-material/Instagram.js";
 
 import Pdf from "../Documents/Resume.pdf";
 
