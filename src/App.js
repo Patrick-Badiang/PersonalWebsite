@@ -38,21 +38,6 @@ function App() {
         <Intro />
       </div>
 
-      {/* <Navigation
-        onScrollToSection={handleScrollToSection} // Pass scroll function as a prop
-        ref1={sectionRef1}
-        ref2={sectionRef2}
-        ref3={sectionRef3}
-      /> */}
-
-<div ref={sectionRef2}>
-        {/* <NewSection
-          title="Experience"
-          element={<NewProject />}
-          onScrollToSection={handleScrollToSection}
-          top={topRef}
-        /> */}
-      </div>
 
       
       <div ref={sectionRef1}>
