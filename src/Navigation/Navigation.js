@@ -6,7 +6,7 @@ import {
   Typography,
   useMediaQuery,
 } from "@mui/material";
-import Grid from "@mui/material/Unstable_Grid2/Grid2";
+import Grid from "@mui/material/Unstable_Grid2/Grid2.js";
 import Icon from '@mui/icons-material/ExpandMore';
 
 const Navigation = ({ onScrollToSection, ref1, ref2, ref3 }) => {
