@@ -1,7 +1,9 @@
+
 module.exports = {
-    moduleNameMapper: {
-      // Other mappers if needed
+    testEnvironment: 'jsdom',
+    transform: {
+      '^.+\\.(js|jsx|ts|tsx)$': '<rootDir>/node_modules/babel-jest',
     },
-    preset: 'esdom', // Adjust this preset based on your testing needs
-    testEnvironment: 'jsdom', // Consider using 'jest-environment-jsdom' for more control
+    moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx', 'json'],
+    // ... other options
   };
