@@ -195,7 +195,7 @@ function Intro() {
                     borderRadius: 5, // Adjust the radius as needed
                     backgroundColor: "#D9D9D9",
                     "&:hover": {
-                      backgroundColor: "#D9D9D9", // Prevent hover color change
+                      backgroundColor: "#D9D9D9", 
                     },
                     width: isSmall ? "80%" : "100%",
                   }}
