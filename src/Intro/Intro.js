@@ -179,8 +179,7 @@ function Intro() {
                     textAlign={"start"}
                     color="#C9FFC2"
                     sx={{ mt: "5px" }}
-                    variant="body2"
-                  >
+                    variant="body2">
                     Smyrna, DE
                   </Typography>
                 </Grid>
