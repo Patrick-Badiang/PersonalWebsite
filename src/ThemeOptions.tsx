@@ -107,8 +107,18 @@ export const themeOptions: ThemeOptions = {
     },
 
     body2: {
-      fontFamily: 'Jura',
-      fontSize: '1.375rem',
+      fontSize: '0.4rem',
+      '@media (min-width:600px)': {
+        fontSize: '0.4rem',   // Extra-small devices (phones)
+        
+      },
+      '@media (min-width:960px)' : {
+        fontSize: '0.8rem',   // Medium devices (desktops)
+      },
+      '@media (min-width:1280px)' : {
+        fontSize: '1rem',   // Large devices (large desktops)
+
+      }
     },
 
     h5: {
