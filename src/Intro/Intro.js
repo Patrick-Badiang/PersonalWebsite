@@ -45,7 +45,6 @@ function Intro() {
         sx={{
           borderRadius: "30px",
           width: isSmall ? "80%" : "50%",
-          // aspectRatio: "639/141",
         }}
       >
         <CardContent>
