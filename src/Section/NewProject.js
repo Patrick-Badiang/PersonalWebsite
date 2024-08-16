@@ -4,7 +4,7 @@
  * calls "description.js"
  */
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
-import TitleCard from "./TitleCard";
+import TitleCard from "./TitleCard.js";
 import { useMediaQuery } from "@mui/material";
 
 const NewProject = (props) => {

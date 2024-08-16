@@ -4,7 +4,7 @@
 
 import { ThemeProvider } from "@emotion/react";
 import "./App.css";
-import Intro from "./Intro/Intro";
+import Intro from "./Intro/Intro.js";
 import {  CssBaseline,  createTheme } from "@mui/material";
 import { themeOptions } from "./ThemeOptions.tsx";
 import NewSection from "./Section/NewSection.js";
