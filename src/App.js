@@ -27,7 +27,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
-      <h1>Hello, world!</h1>
+      <h1>Hello, world! Theme</h1>
     </div>
       {/* <CssBaseline />
       <div>
