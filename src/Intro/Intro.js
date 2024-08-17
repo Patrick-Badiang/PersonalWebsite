@@ -49,7 +49,31 @@ function Intro() {
       >
         <CardContent>
            <Grid xs={12} container direction={"row"} spacing={2}>
-            <div><h2>Trying Grid</h2></div>
+            {/* //Profile Pic */}
+            <Grid item xs>
+              <Box
+                sx={{
+                  borderRadius: "24px",
+                  aspectRatio: "1/1",
+                  width: "100%",
+                  height: "100%",
+                  position: "relative", // Make Box the positioning container
+                }}
+              >
+                <img
+                  src="pictures/ProfilePic.png"
+                  alt="Profile Pic"
+                  style={{
+                    borderRadius: "20px",
+                    position: "absolute",
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                  }}
+                />
+              </Box>
+            </Grid>
+            
           </Grid> 
         </CardContent>
       </Card>
