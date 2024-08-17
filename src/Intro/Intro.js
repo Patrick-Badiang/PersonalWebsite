@@ -24,8 +24,8 @@ import Grid from "@mui/material/Unstable_Grid2/Grid2.js";
 import React from "react";
 
 // import EmailIcon from "@mui/icons-material/Email.js";
-import LocationOnIcon from "@mui/icons-material/LocationOn.js";
-import FileDownloadIcon from "@mui/icons-material/FileDownload.js";
+// import LocationOnIcon from "@mui/icons-material/LocationOn.js";
+// import FileDownloadIcon from "@mui/icons-material/FileDownload.js";
 
 // import LinkedInIcon from "@mui/icons-material/LinkedIn.js";
 // import GitHubIcon from "@mui/icons-material/GitHub.js";
