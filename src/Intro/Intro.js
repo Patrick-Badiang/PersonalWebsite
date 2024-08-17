@@ -19,7 +19,7 @@ import {
   // Typography,
   useMediaQuery,
 } from "@mui/material";
-// import Grid from "@mui/material/Unstable_Grid2/Grid2.js";
+import Grid from "@mui/material/Unstable_Grid2/Grid2.js";
 // import Buttons from './Buttons';
 import React from "react";
 
@@ -48,8 +48,9 @@ function Intro() {
         }}
       >
         <CardContent>
-          <div><h2>Trying Card Content</h2></div>
-          
+           <Grid xs={12} container direction={"row"} spacing={2}>
+            <div><h2>Trying Grid</h2></div>
+          </Grid> 
         </CardContent>
       </Card>
     </Box>  
