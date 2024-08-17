@@ -84,12 +84,12 @@ function Intro() {
               {/* //Email with Email Icon*/}
 
               <Grid container direction={"row"} xs={12} spacing = {0}>
-                  {/* <EmailIcon
+                  <EmailIcon
                     sx={{
                       color: "white",
                       height: isSmall ? "8px" : "16px",
                     }}
-                  /> */}
+                  />
                   <Typography textAlign={"start"} variant="body1">
                     patrick.vyn.llanto@gmail.com
                   </Typography>
