@@ -99,65 +99,7 @@ function Intro() {
               <Typography variant="body2" textAlign={"start"} color="#FFD3AB">
                 Full Stack Engineer | Undergraduate Student
               </Typography>
-              //Icon Buttons
-              <div style={{ marginTop: "15px" }}>
-                <Grid container direction={"row"} justifyContent={"start"}>
-                  {/* <IconButton
-                    href="https://www.linkedin.com/in/patrick-vyn-badiang/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Example"
-                    sx={{
-                      height: isSmall ? "8px" : "32px",
-                      aspectRatio: "1/1",
-                    }}
-                  >
-                    <LinkedInIcon
-                      sx={{
-                        color: "#000000",
-                        height: isSmall ? "8px" : "32px",
-                        aspectRatio: "1/1",
-                      }}
-                    />
-                  </IconButton>
-                  <IconButton
-                    href="https://www.instagram.com/patrick.vyn/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Example"
-                    sx={{
-                      height: isSmall ? "8px" : "32px",
-                      aspectRatio: "1/1",
-                    }}
-                  >
-                    <InstagramIcon
-                      sx={{
-                        color: "#000000",
-                        height: isSmall ? "8px" : "32px",
-                        aspectRatio: "1/1",
-                      }}
-                    />
-                  </IconButton>
-                  <IconButton
-                    href="https://github.com/Patrick-Badiang"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Example"
-                    sx={{
-                      height: isSmall ? "8px" : "32px",
-                      aspectRatio: "1/1",
-                    }}
-                  >
-                    <GitHubIcon
-                      sx={{
-                        color: "#000000",
-                        height: isSmall ? "8px" : "32px",
-                        aspectRatio: "1/1",
-                      }}
-                    />
-                  </IconButton> */}
-                </Grid>
-              </div>
+              
             </Grid>
 
           </Grid> 
