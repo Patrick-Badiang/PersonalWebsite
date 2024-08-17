@@ -14,7 +14,7 @@ import {
   Box,
   // Button,
   Card,
-  // CardContent,
+  CardContent,
   // IconButton,
   // Typography,
   useMediaQuery,
@@ -47,8 +47,10 @@ function Intro() {
           width: isSmall ? "80%" : "50%",
         }}
       >
-        <div><h2>Trying Card</h2></div>
-        
+        <CardContent>
+          <div><h2>Trying Card Content</h2></div>
+          
+        </CardContent>
       </Card>
     </Box>  
   );
