@@ -15,7 +15,7 @@ import {
   // Button,
   Card,
   CardContent,
-  IconButton,
+  // IconButton,
   Typography,
   useMediaQuery,
 } from "@mui/material";
@@ -27,9 +27,9 @@ import EmailIcon from "@mui/icons-material/Email.js";
 // import LocationOnIcon from "@mui/icons-material/LocationOn.js";
 // import FileDownloadIcon from "@mui/icons-material/FileDownload.js";
 
-import LinkedInIcon from "@mui/icons-material/LinkedIn.js";
-import GitHubIcon from "@mui/icons-material/GitHub.js";
-import InstagramIcon from "@mui/icons-material/Instagram.js";
+// import LinkedInIcon from "@mui/icons-material/LinkedIn.js";
+// import GitHubIcon from "@mui/icons-material/GitHub.js";
+// import InstagramIcon from "@mui/icons-material/Instagram.js";
 
 // import Pdf from "../Documents/Resume.pdf";
 
@@ -99,7 +99,7 @@ function Intro() {
               <Typography variant="body2" textAlign={"start"} color="#FFD3AB">
                 Full Stack Engineer | Undergraduate Student
               </Typography>
-              {/* //Icon Buttons */}
+              {/* //Icon Buttons
               <div style={{ marginTop: "15px" }}>
                 <Grid container direction={"row"} justifyContent={"start"}>
                   <IconButton
@@ -157,7 +157,7 @@ function Intro() {
                     />
                   </IconButton>
                 </Grid>
-              </div>
+              </div> */}
             </Grid>
 
             
