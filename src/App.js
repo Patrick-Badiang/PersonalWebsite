@@ -2,13 +2,14 @@
  * Navigation is a sidebar, clicks to go to specific part of  page
  */
 
-import { ThemeProvider } from "@emotion/react";
+// import { ThemeProvider } from "@emotion/react";
 import "./App.css";
-import Intro from "./Intro/Intro.js";
-import { CssBaseline, createTheme } from "@mui/material";
+// import Intro from "./Intro/Intro.js";
+//CssBaseline
+import {  createTheme } from "@mui/material";
 import { themeOptions } from "./ThemeOptions.tsx";
-import NewSection from "./Section/NewSection.js";
-import NewProject from "./Section/NewProject.js";
+// import NewSection from "./Section/NewSection.js";
+// import NewProject from "./Section/NewProject.js";
 
 import "resize-observer-polyfill/dist/ResizeObserver.global.js";
 
