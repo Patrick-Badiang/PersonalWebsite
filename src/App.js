@@ -27,12 +27,10 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
 
-      <div>
         <Intro />
         <div className="App">
           <h1>Hello, world! Theme CssBaseline Intro</h1>
         </div>
-      </div>
 
       {/*<div >
         <NewSection
