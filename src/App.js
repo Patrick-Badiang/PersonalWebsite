@@ -2,11 +2,11 @@
  * Navigation is a sidebar, clicks to go to specific part of  page
  */
 
-// import { ThemeProvider } from "@emotion/react";
+import { ThemeProvider } from "@emotion/react";
 import "./App.css";
 // import Intro from "./Intro/Intro.js";
 import { createTheme } from "@mui/material";
-// import { themeOptions } from "./ThemeOptions.tsx";
+import { themeOptions } from "./ThemeOptions.tsx";
 // import NewSection from "./Section/NewSection.js";
 // import NewProject from "./Section/NewProject.js";
 //CssBaseline
