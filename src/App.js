@@ -5,11 +5,11 @@
 import { ThemeProvider } from "@emotion/react";
 import "./App.css";
 // import Intro from "./Intro/Intro.js";
-import { createTheme } from "@mui/material";
+import { CssBaseline, createTheme } from "@mui/material";
 import { themeOptions } from "./ThemeOptions.tsx";
 // import NewSection from "./Section/NewSection.js";
 // import NewProject from "./Section/NewProject.js";
-//CssBaseline
+//
 
 import "resize-observer-polyfill/dist/ResizeObserver.global.js";
 
@@ -26,11 +26,12 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <div className="App">
-      <h1>Hello, world! Theme</h1>
+      
+       <CssBaseline />
+       <div className="App">
+      <h1>Hello, world! Theme CssBaseline</h1>
     </div>
-      {/* <CssBaseline />
-      <div>
+      {/*<div>
         <Intro />
       </div>
 
