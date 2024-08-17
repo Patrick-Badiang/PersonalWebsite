@@ -10,18 +10,18 @@
  *      A rectangle
  */
 
-// import {
-//   Box,
-//   Button,
-//   Card,
-//   CardContent,
-//   IconButton,
-//   Typography,
-//   useMediaQuery,
-// } from "@mui/material";
+import {
+  Box,
+  // Button,
+  // Card,
+  // CardContent,
+  // IconButton,
+  // Typography,
+  // useMediaQuery,
+} from "@mui/material";
 // import Grid from "@mui/material/Unstable_Grid2/Grid2.js";
-// // import Buttons from './Buttons';
-// import React from "react";
+// import Buttons from './Buttons';
+import React from "react";
 
 // import EmailIcon from "@mui/icons-material/Email.js";
 // import LocationOnIcon from "@mui/icons-material/LocationOn.js";
@@ -39,12 +39,11 @@ function Intro() {
 
   //Gif
 
-  return (<div> <h2>Hello</h2></div>
-   
-
-     
+  return (
+     <Box display="flex" justifyContent="center" sx={{ mt: "80px" }}>
+      <div><h2>Trying  box</h2></div>
+    </Box>  
   );
 }
 
 export default Intro;
-
