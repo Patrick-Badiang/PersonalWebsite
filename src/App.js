@@ -24,21 +24,24 @@ function App() {
   const theme = createTheme(themeOptions);
 
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <div>
-        <Intro />
-      </div>
+    // <ThemeProvider theme={theme}>
+    //   <CssBaseline />
+    //   <div>
+    //     <Intro />
+    //   </div>
 
-      <div >
-        <NewSection
-          title="Projects"
-          element={<NewProject />}
-          onScrollToSection={handleScrollToSection}
-        />
-      </div>
+    //   <div >
+    //     <NewSection
+    //       title="Projects"
+    //       element={<NewProject />}
+    //       onScrollToSection={handleScrollToSection}
+    //     />
+    //   </div>
 
-    </ThemeProvider>
+    // </ThemeProvider>
+    <div className="App">
+      <h1>Hello, world!</h1>
+    </div>
   );
 }
 
