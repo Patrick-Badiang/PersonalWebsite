@@ -4,7 +4,7 @@
 
 import { ThemeProvider } from "@emotion/react";
 import "./App.css";
-// import Intro from "./Intro/Intro.js";
+import Intro from "./Intro/Intro.js";
 import { CssBaseline, createTheme } from "@mui/material";
 import { themeOptions } from "./ThemeOptions.tsx";
 // import NewSection from "./Section/NewSection.js";
@@ -14,7 +14,6 @@ import { themeOptions } from "./ThemeOptions.tsx";
 import "resize-observer-polyfill/dist/ResizeObserver.global.js";
 
 function App() {
-
   // const handleScrollToSection = (sectionRef) => {
   //   if (sectionRef.current) {
   //     sectionRef.current.scrollIntoView({ behavior: "smooth" });
@@ -26,14 +25,13 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      
-       <CssBaseline />
-       
+      <CssBaseline />
+
       <div>
         <Intro />
         <div className="App">
-      <h1>Hello, world! Theme CssBaseline Intro</h1>
-    </div>
+          <h1>Hello, world! Theme CssBaseline Intro</h1>
+        </div>
       </div>
 
       {/*<div >
@@ -43,9 +41,7 @@ function App() {
           onScrollToSection={handleScrollToSection}
         />
       </div> */}
-
     </ThemeProvider>
-   
   );
 }
 
