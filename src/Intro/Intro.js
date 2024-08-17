@@ -13,11 +13,11 @@
 import {
   Box,
   // Button,
-  // Card,
+  Card,
   // CardContent,
   // IconButton,
   // Typography,
-  // useMediaQuery,
+  useMediaQuery,
 } from "@mui/material";
 // import Grid from "@mui/material/Unstable_Grid2/Grid2.js";
 // import Buttons from './Buttons';
@@ -35,13 +35,21 @@ import React from "react";
 
 function Intro() {
   //Checking if the  screen is small
-  // const isSmall = useMediaQuery((theme) => theme.breakpoints.down("md"));
+  const isSmall = useMediaQuery((theme) => theme.breakpoints.down("md"));
 
   //Gif
 
   return (
      <Box display="flex" justifyContent="center" sx={{ mt: "80px" }}>
-      <div><h2>Trying  box</h2></div>
+      <Card
+        sx={{
+          borderRadius: "30px",
+          width: isSmall ? "80%" : "50%",
+        }}
+      >
+        <div><h2>Trying Card</h2></div>
+        
+      </Card>
     </Box>  
   );
 }
