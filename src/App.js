@@ -28,14 +28,15 @@ function App() {
     <ThemeProvider theme={theme}>
       
        <CssBaseline />
-       <div className="App">
-      <h1>Hello, world! Theme CssBaseline</h1>
-    </div>
-      {/*<div>
+       
+      <div>
         <Intro />
+        <div className="App">
+      <h1>Hello, world! Theme CssBaseline Intro</h1>
+    </div>
       </div>
 
-      <div >
+      {/*<div >
         <NewSection
           title="Projects"
           element={<NewProject />}
