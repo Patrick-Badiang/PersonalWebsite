@@ -35,7 +35,6 @@ function App() {
           title="Projects"
           element={<NewProject />}
           onScrollToSection={handleScrollToSection}
-          top={topRef}
         />
       </div>
 
