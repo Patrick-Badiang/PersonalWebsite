@@ -41,8 +41,7 @@ function Intro() {
   //Gif
 
   return (
-
-     <Box display="flex" justifyContent="center" sx={{ mt: "80px" }}>
+    <Box display="flex" justifyContent="center" sx={{ mt: "80px" }}>
       <Card
         sx={{
           borderRadius: "30px",
@@ -85,17 +84,16 @@ function Intro() {
               </Grid>
               {/* //Email with Email Icon*/}
 
-              <Grid container direction={"row"} xs={12} spacing = {0}>
-                  <EmailIcon
-                    sx={{
-                      color: "#FFFFFF",
-                      height: isSmall ? "8px" : "16px",
-                    }}
-                  />
-                  <Typography textAlign={"start"} variant="body1">
-                    patrick.vyn.llanto@gmail.com
-                  </Typography>
-                
+              <Grid container direction={"row"} xs={12} spacing={0}>
+                <EmailIcon
+                  sx={{
+                    color: "#FFFFFF",
+                    height: isSmall ? "8px" : "16px",
+                  }}
+                />
+                <Typography textAlign={"start"} variant="body1">
+                  patrick.vyn.llanto@gmail.com
+                </Typography>
               </Grid>
               {/* //Description */}
               <Typography variant="body2" textAlign={"start"} color="#FFD3AB">
@@ -103,61 +101,67 @@ function Intro() {
               </Typography>
               {/* //Icon Buttons */}
               <div style={{ marginTop: "15px" }}>
-                <Grid container direction={"row"} justifyContent={"start"}>
-                  <IconButton
-                    href="https://www.linkedin.com/in/patrick-vyn-badiang/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Example"
-                    sx={{
-                      height: isSmall ? "8px" : "32px",
-                      aspectRatio: "1/1",
-                    }}
-                  >
-                    <LinkedInIcon
+                <Grid container direction={"row"} justifyContent={"start"} spacing={3}>
+                  <Grid item>
+                    <IconButton
+                      href="https://www.linkedin.com/in/patrick-vyn-badiang/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Example"
                       sx={{
-                        color: "#000000",
-                        height: isSmall ? "8px" : "32px",
+                        height: isSmall ? "16px" : "32px",
                         aspectRatio: "1/1",
                       }}
-                    />
-                  </IconButton>
-                  <IconButton
-                    href="https://www.instagram.com/patrick.vyn/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Example"
-                    sx={{
-                      height: isSmall ? "8px" : "32px",
-                      aspectRatio: "1/1",
-                    }}
-                  >
-                    <InstagramIcon
+                    >
+                      <LinkedInIcon
+                        sx={{
+                          color: "#000000",
+                          height: isSmall ? "16px" : "32px",
+                          aspectRatio: "1/1",
+                        }}
+                      />
+                    </IconButton>
+                  </Grid>
+                  <Grid>
+                    <IconButton
+                      href="https://www.instagram.com/patrick.vyn/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Example"
                       sx={{
-                        color: "#000000",
-                        height: isSmall ? "8px" : "32px",
+                        height: isSmall ? "16px" : "32px",
                         aspectRatio: "1/1",
                       }}
-                    />
-                  </IconButton>
-                  <IconButton
-                    href="https://github.com/Patrick-Badiang"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Example"
-                    sx={{
-                      height: isSmall ? "8px" : "32px",
-                      aspectRatio: "1/1",
-                    }}
-                  >
-                    <GitHubIcon
+                    >
+                      <InstagramIcon
+                        sx={{
+                          color: "#000000",
+                          height: isSmall ? "16px" : "32px",
+                          aspectRatio: "1/1",
+                        }}
+                      />
+                    </IconButton>
+                  </Grid>
+                  <Grid>
+                    <IconButton
+                      href="https://github.com/Patrick-Badiang"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Example"
                       sx={{
-                        color: "#000000",
-                        height: isSmall ? "8px" : "32px",
+                        height: isSmall ? "16px" : "32px",
                         aspectRatio: "1/1",
                       }}
-                    />
-                  </IconButton>
+                    >
+                      <GitHubIcon
+                        sx={{
+                          color: "#000000",
+                          height: isSmall ? "16px" : "32px",
+                          aspectRatio: "1/1",
+                        }}
+                      />
+                    </IconButton>
+                  </Grid>
                 </Grid>
               </div>
             </Grid>
@@ -181,7 +185,8 @@ function Intro() {
                     textAlign={"start"}
                     color="#C9FFC2"
                     sx={{ mt: "5px" }}
-                    variant="body2">
+                    variant="body2"
+                  >
                     Smyrna, DE
                   </Typography>
                 </Grid>
@@ -196,7 +201,7 @@ function Intro() {
                     borderRadius: 5, // Adjust the radius as needed
                     backgroundColor: "#D9D9D9",
                     "&:hover": {
-                      backgroundColor: "#D9D9D9", 
+                      backgroundColor: "#D9D9D9",
                     },
                     width: isSmall ? "80%" : "100%",
                   }}
@@ -223,7 +228,7 @@ function Intro() {
           </Grid>
         </CardContent>
       </Card>
-    </Box>  
+    </Box>
   );
 }
 
