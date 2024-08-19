@@ -101,7 +101,7 @@ function Intro() {
               </Typography>
               {/* //Icon Buttons */}
               <div style={{ marginTop: "15px" }}>
-                <Grid container direction={"row"} justifyContent={"start"} spacing={2}>
+                <Grid container direction={"row"} justifyContent={"start"} spacing={1}>
                   <Grid item>
                     <IconButton
                       href="https://www.linkedin.com/in/patrick-vyn-badiang/"
