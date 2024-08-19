@@ -9,7 +9,7 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2/Grid2.js";
-import CallMadeIcon from "@mui/icons-material/CallMade.js";
+import CallMadeIcon from "@mui/icons-material/CallMade";
 
 const TitleCard = (props) => {
   const frame = props.frame;

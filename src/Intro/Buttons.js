@@ -1,6 +1,6 @@
 import { Button} from "@mui/material";
 
-import ArrowRightIcon from "@mui/icons-material/ArrowRight.js";
+import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
 function Buttons() {
   const centerDivStyle = {

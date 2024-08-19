@@ -1,9 +1,9 @@
 import { IconButton, TextField, useMediaQuery } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2/Grid2.js";
 import ContactCard from "./ContactCard.js";
-import LinkedInIcon from "@mui/icons-material/LinkedIn.js";
-import GitHubIcon from "@mui/icons-material/GitHub.js";
-import InstagramIcon from "@mui/icons-material/Instagram.js";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 function Contact() {
 

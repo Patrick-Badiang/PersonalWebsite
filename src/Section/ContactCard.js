@@ -8,10 +8,10 @@ import {
   Snackbar,
 } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2/Grid2.js";
-import SendIcon from "@mui/icons-material/Send.js";
+import SendIcon from "@mui/icons-material/Send";
 import emailjs from "@emailjs/browser";
 import React, { useRef, useState } from "react";
-import CheckIcon from '@mui/icons-material/Check.js';
+import CheckIcon from '@mui/icons-material/Check';
 
 
 function ContactCard() {
