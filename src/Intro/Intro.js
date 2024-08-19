@@ -25,14 +25,14 @@ import React from "react";
 
 //The ".js" is  messing up the import
 import EmailIcon from "@mui/icons-material/Email";
-import LocationOnIcon from "@mui/icons-material/LocationOn.js";
-import FileDownloadIcon from "@mui/icons-material/FileDownload.js";
+// import LocationOnIcon from "@mui/icons-material/LocationOn.js";
+// import FileDownloadIcon from "@mui/icons-material/FileDownload.js";
 
-import LinkedInIcon from "@mui/icons-material/LinkedIn.js";
-import GitHubIcon from "@mui/icons-material/GitHub.js";
-import InstagramIcon from "@mui/icons-material/Instagram.js";
+// import LinkedInIcon from "@mui/icons-material/LinkedIn.js";
+// import GitHubIcon from "@mui/icons-material/GitHub.js";
+// import InstagramIcon from "@mui/icons-material/Instagram.js";
 
-import Pdf from "../Documents/Resume.pdf";
+// import Pdf from "../Documents/Resume.pdf";
 
 function Intro() {
   //Checking if the  screen is small
