@@ -107,7 +107,7 @@ export const themeOptions: ThemeOptions = {
     },
 
     body2: {
-      fontSize: '0.2rem',
+      fontSize: '0.4rem',
       '@media (min-width:600px)': {
         fontSize: '0.4rem',   // Extra-small devices (phones)
         
