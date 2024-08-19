@@ -7,9 +7,9 @@ import "./App.css";
 import Intro from "./Intro/Intro.js";
 import { CssBaseline, createTheme } from "@mui/material";
 import { themeOptions } from "./ThemeOptions.tsx";
-// import NewSection from "./Section/NewSection.js";
-// import NewProject from "./Section/NewProject.js";
-//
+import NewSection from "./Section/NewSection.js";
+import NewProject from "./Section/NewProject.js";
+
 
 import "resize-observer-polyfill/dist/ResizeObserver.global.js";
 
@@ -33,7 +33,6 @@ function App() {
         <NewSection
           title="Projects"
           element={<NewProject />}
-          onScrollToSection={handleScrollToSection}
         />
       </div>
     </ThemeProvider>
