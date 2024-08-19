@@ -28,17 +28,14 @@ function App() {
       <CssBaseline />
 
         <Intro />
-        <div className="App">
-          <h1>Hello, world! Theme CssBaseline Intro</h1>
-        </div>
 
-      {/*<div >
+      <div >
         <NewSection
           title="Projects"
           element={<NewProject />}
           onScrollToSection={handleScrollToSection}
         />
-      </div> */}
+      </div>
     </ThemeProvider>
   );
 }
