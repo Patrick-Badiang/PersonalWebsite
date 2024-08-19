@@ -101,7 +101,7 @@ function Intro() {
               </Typography>
               {/* //Icon Buttons */}
               <div style={{ marginTop: "15px" }}>
-                <Grid container direction={"row"} justifyContent={"start"} spacing={3}>
+                <Grid container direction={"row"} justifyContent={"start"} spacing={2}>
                   <Grid item>
                     <IconButton
                       href="https://www.linkedin.com/in/patrick-vyn-badiang/"
@@ -109,14 +109,14 @@ function Intro() {
                       rel="noopener noreferrer"
                       aria-label="Example"
                       sx={{
-                        height: isSmall ? "16px" : "32px",
+                        height: isSmall ? "12px" : "32px",
                         aspectRatio: "1/1",
                       }}
                     >
                       <LinkedInIcon
                         sx={{
                           color: "#000000",
-                          height: isSmall ? "16px" : "32px",
+                          height: isSmall ? "12px" : "32px",
                           aspectRatio: "1/1",
                         }}
                       />
@@ -129,14 +129,14 @@ function Intro() {
                       rel="noopener noreferrer"
                       aria-label="Example"
                       sx={{
-                        height: isSmall ? "16px" : "32px",
+                        height: isSmall ? "12px" : "32px",
                         aspectRatio: "1/1",
                       }}
                     >
                       <InstagramIcon
                         sx={{
                           color: "#000000",
-                          height: isSmall ? "16px" : "32px",
+                          height: isSmall ? "12px" : "32px",
                           aspectRatio: "1/1",
                         }}
                       />
@@ -149,14 +149,14 @@ function Intro() {
                       rel="noopener noreferrer"
                       aria-label="Example"
                       sx={{
-                        height: isSmall ? "16px" : "32px",
+                        height: isSmall ? "12px" : "32px",
                         aspectRatio: "1/1",
                       }}
                     >
                       <GitHubIcon
                         sx={{
                           color: "#000000",
-                          height: isSmall ? "16px" : "32px",
+                          height: isSmall ? "12px" : "32px",
                           aspectRatio: "1/1",
                         }}
                       />
