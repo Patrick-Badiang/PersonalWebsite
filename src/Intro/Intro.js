@@ -63,7 +63,7 @@ function Intro() {
                 }}
               >
                 <img
-                  src="pictures/ProfilePic.png"
+                  src="/pictures/ProfilePic.png"
                   alt="Profile Pic"
                   style={{
                     borderRadius: "20px",
