@@ -21,7 +21,7 @@ const TitleCard = (props) => {
       <Paper
         elevation={0}
         sx={{
-          height: "40vh",
+          height: isSmallScreen ? "40vh":"40vh",
           backgroundColor: "#4E684D",
           borderRadius: "20px",
         }}
@@ -77,13 +77,13 @@ const TitleCard = (props) => {
                 </Grid>
               </Grid>
             </Grid>
-            <Grid item xs={5}>
+            <Grid item xs={7}>
               <Card
                 sx={{
                   borderRadius: "10px",
                   maxWidth: "430px",
                   maxHeight: "242px",
-                  backgroundColor: props.color,
+                  // backgroundColor: props.color,
                   display: "flex",
                   justifyContent: "center",
                   alignContent: "center",

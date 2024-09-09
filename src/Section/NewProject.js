@@ -15,24 +15,15 @@ const NewProject = (props) => {
     <div
       style={{
         display: "flex",
-        justifyContent: "center",
-        alignContent: "center",
+        justifyContent: "start",
+        alignContent: "left",
       }}
     >
       
         {isMediumScreen ? (
-        <Grid container xs={12} spacing={5} rowSpacing={5}>
+        <Grid container xs={12} spacing={4} rowSpacing={4}>
           <Grid item xs>
-
           
-          <TitleCard
-          link="https://vtfasa.org"
-          logo="pictures/vtfasaLogo.png"
-          title="Fasa Website"
-          dev="The club Filipino American Student Association tasked me to build a website that can serve as a hub for the active/future members of the club. The website took three months to create and was continuously updated throughout the following  school year."
-          image="pictures/vtfasa.png"
-          frame = {["React", "MaterialUi"]}
-        />
         <TitleCard
           link="https://www.youtube.com/@kubergames3410"
           logo="pictures/KuberGamingLogo.png"
@@ -41,6 +32,14 @@ const NewProject = (props) => {
           image="pictures/BohdiedSpirits.png"
           frame = {["Unity"]}
 
+        />
+        <TitleCard
+          link="https://vtfasa.org"
+          logo="pictures/vtfasaLogo.png"
+          title="Fasa Website"
+          dev="The club Filipino American Student Association tasked me to build a website that can serve as a hub for the active/future members of the club. The website took three months to create and was continuously updated throughout the following  school year."
+          image="pictures/vtfasa.png"
+          frame = {["React", "MaterialUi"]}
         />
 
         <TitleCard

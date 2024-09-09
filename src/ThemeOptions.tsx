@@ -56,7 +56,7 @@ export const themeOptions: ThemeOptions = {
       fontWeight: 10,
       fontSize: '1.0 rem',
       '@media (min-width:600px)': {
-        fontSize: '0.5rem',   // Extra-small devices (phones)
+        fontSize: '1rem',   // Extra-small devices (phones)
         
       },
       '@media (min-width:960px)' : {
@@ -90,7 +90,7 @@ export const themeOptions: ThemeOptions = {
     },
 
     body1: {
-      fontSize: '0.5rem',
+      fontSize: '0.7rem',
       '@media (min-width:600px)': {
         fontSize: '0.7rem',   // Extra-small devices (phones)
         
@@ -120,12 +120,13 @@ export const themeOptions: ThemeOptions = {
 
       }
     },
+    
 
     h5: {
-      fontSize: '0.5rem',
+      fontSize: '1rem',
       fontWeight:10,
       '@media (min-width:600px)': {
-        fontSize: '0.5rem',   // Extra-small devices (phones)
+        fontSize: '1rem',   // Extra-small devices (phones)
         
       },
       '@media (min-width:960px)' : {

@@ -14,23 +14,21 @@ const NewSection = (props) => {
   return (
     <div  style = {{marginTop: '10px'}}>
       {isSmall ? (
-        <Grid container direction={"row"} spacing={2} xs={12}>
-          <Grid item xs={1} />
-          <Grid item xs={2}>
-            <Typography variant="h5" ml={2}>
+        <>
+            <Typography variant="h5" sx = {{ml: "15px"}}>
               {props.title}
             </Typography>
             <Box
               sx={{
-                width: "100%",
+                width: "15%",
                 height: 2,
                 bgcolor: "#FFD3AB",
-                mb: "30px",
+                mb: "15px",
+                ml: "15px"
               }}
             />
-          </Grid>
-          <Grid xs />
-        </Grid>
+          </>
+          
       ) : (
         <Grid container direction={"row"} spacing={2} xs={12}>
           <Grid item xs={3} />
@@ -52,8 +50,6 @@ const NewSection = (props) => {
       )}
 
       {props.element}
-
-      <Box sx={{ height: 50 }} />
     </div>
   );
 };

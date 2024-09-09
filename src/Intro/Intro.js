@@ -41,11 +41,11 @@ function Intro() {
   //Gif
 
   return (
-    <Box display="flex" justifyContent="center" sx={{ mt: "80px" }}>
+    <Box display="flex" justifyContent="center" sx={{ mt: isSmall ? "10px":"80px" }}>
       <Card
         sx={{
           borderRadius: "30px",
-          width: isSmall ? "80%" : "50%",
+          width: isSmall ? "95%" : "50%",
         }}
       >
         <CardContent>
@@ -88,7 +88,7 @@ function Intro() {
                 <EmailIcon
                   sx={{
                     color: "#FFFFFF",
-                    height: isSmall ? "8px" : "16px",
+                    height: "16px",
                   }}
                 />
                 <Typography textAlign={"start"} variant="body1">
@@ -109,14 +109,14 @@ function Intro() {
                       rel="noopener noreferrer"
                       aria-label="Example"
                       sx={{
-                        height: isSmall ? "12px" : "32px",
+                        height: isSmall ? "16px" : "32px",
                         aspectRatio: "1/1",
                       }}
                     >
                       <LinkedInIcon
                         sx={{
                           color: "#000000",
-                          height: isSmall ? "12px" : "32px",
+                          height: isSmall ? "16px" : "32px",
                           aspectRatio: "1/1",
                         }}
                       />
@@ -129,14 +129,14 @@ function Intro() {
                       rel="noopener noreferrer"
                       aria-label="Example"
                       sx={{
-                        height: isSmall ? "12px" : "32px",
+                        height: isSmall ? "16px" : "32px",
                         aspectRatio: "1/1",
                       }}
                     >
                       <InstagramIcon
                         sx={{
                           color: "#000000",
-                          height: isSmall ? "12px" : "32px",
+                          height: isSmall ? "16px" : "32px",
                           aspectRatio: "1/1",
                         }}
                       />
@@ -149,15 +149,16 @@ function Intro() {
                       rel="noopener noreferrer"
                       aria-label="Example"
                       sx={{
-                        height: isSmall ? "12px" : "32px",
+                        height: isSmall ? "16px" : "32px",
                         aspectRatio: "1/1",
                       }}
                     >
                       <GitHubIcon
                         sx={{
                           color: "#000000",
-                          height: isSmall ? "12px" : "32px",
+                          height: isSmall ? "16px" : "32px",
                           aspectRatio: "1/1",
+
                         }}
                       />
                     </IconButton>
@@ -203,14 +204,15 @@ function Intro() {
                     "&:hover": {
                       backgroundColor: "#D9D9D9",
                     },
-                    width: isSmall ? "80%" : "100%",
+                    width: "100%",
                   }}
                   startIcon={
                     <FileDownloadIcon
                       sx={{
                         color: "#000000",
-                        height: isSmall ? "8px" : "32px",
+                        height: isSmall ? "16px" : "32px",
                         aspectRatio: "1/1",
+                        ml: isSmall ? "10px" : "10px",
                       }}
                     />
                   }
