@@ -24,6 +24,23 @@ const NewProject = (props) => {
         <Grid container xs={12} spacing={4} rowSpacing={4}>
           <Grid item xs>
           
+          <TitleCard
+              link="http://54.198.229.115:8080/Books-Badiang/index.xhtml"
+              logo="pictures/Books.png"
+              title="Books"
+              dev="Is  hosted on Amazon EC2 instance along with Wildfly which utilizes MySQL database to host favorite book data and calls Google Book API to find new books to add."
+              image="pictures/Books.png"
+              frame = {["Jakarta EE", "MySQL","Wildfly", "Gradle", "EC2"]}
+            />
+        
+        <TitleCard
+          link="https://vtfasa.org"
+          logo="pictures/vtfasaLogo.png"
+          title="Fasa Website"
+          dev="The club Filipino American Student Association tasked me to build a website that can serve as a hub for the active/future members of the club. The website took three months to create and was continuously updated throughout the following  school year."
+          image="pictures/vtfasa.png"
+          frame = {["React", "MaterialUi"]}
+        />
         <TitleCard
           link="https://www.youtube.com/@kubergames3410"
           logo="pictures/KuberGamingLogo.png"
@@ -32,14 +49,6 @@ const NewProject = (props) => {
           image="pictures/BohdiedSpirits.png"
           frame = {["Unity"]}
 
-        />
-        <TitleCard
-          link="https://vtfasa.org"
-          logo="pictures/vtfasaLogo.png"
-          title="Fasa Website"
-          dev="The club Filipino American Student Association tasked me to build a website that can serve as a hub for the active/future members of the club. The website took three months to create and was continuously updated throughout the following  school year."
-          image="pictures/vtfasa.png"
-          frame = {["React", "MaterialUi"]}
         />
 
         <TitleCard
@@ -75,6 +84,14 @@ const NewProject = (props) => {
           <Grid container xs={12} spacing={5} rowSpacing={5}>
           <Grid xs />
           <Grid xs={6}>
+            <TitleCard
+              link="http://54.198.229.115:8080/Books-Badiang/index.xhtml"
+              logo="pictures/Books.png"
+              title="Books"
+              dev="Is  hosted on Amazon EC2 instance along with Wildfly which utilizes MySQL database to host favorite book data and calls Google Book API to find new books to add."
+              image="pictures/Books.png"
+              frame = {["Jakarta EE", "MySQL","Wildfly", "Gradle", "EC2"]}
+            />
             <TitleCard
               link="https://vtfasa.org"
               logo="pictures/vtfasaLogo.png"
