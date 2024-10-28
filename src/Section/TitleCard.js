@@ -22,7 +22,7 @@ const TitleCard = (props) => {
         elevation={0}
         sx={{
           height: isSmallScreen ? "40vh":"40vh",
-          backgroundColor: "#4E684D",
+          backgroundColor: "#A1A99D",
           borderRadius: "20px",
         }}
       >
