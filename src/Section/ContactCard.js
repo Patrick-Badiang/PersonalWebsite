@@ -43,7 +43,7 @@ function ContactCard() {
 
   return (
     <>
-    <form ref={form} onSubmit={sendEmail}>
+    <form ref={form} onSubmit={sendEmail} style={{width: "50%"}}>
       <Paper elevation={5}>
         <CardContent>
           <Grid container direction={"column"} spacing={4}>

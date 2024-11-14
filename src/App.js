@@ -12,6 +12,7 @@ import NewProject from "./Section/NewProject.js";
 
 
 import "resize-observer-polyfill/dist/ResizeObserver.global.js";
+import ContactCard from "./Section/ContactCard.js";
 
 function App() {
   // const handleScrollToSection = (sectionRef) => {
@@ -35,6 +36,15 @@ function App() {
           element={<NewProject />}
         />
       </div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignContent: "center",
+          marginBottom: "10vh",
+        }}>
+          <ContactCard/>
+        </div>
     </ThemeProvider>
   );
 }

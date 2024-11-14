@@ -25,6 +25,15 @@ const NewProject = (props) => {
           <Grid item xs>
           
           <TitleCard
+              link="http://54.198.229.115:8080/Cocktails-Badiang/index.xhtml"
+              logo="pictures/Cocktails.png"
+              title="Cocktails"
+              dev="Is hosted on Amazon EC2 instance along with Wildfly which utilizes MySQL database to host favorite cocktails recipes and calls The CocktailsDB API and Open Brewery API to find new cocktails/breweries to add or browse."
+              image="pictures/Cocktails.png"
+              frame = {["Jakarta EE", "MySQL","Wildfly", "Gradle", "EC2"]}
+            />
+
+          <TitleCard
               link="http://54.198.229.115:8080/Books-Badiang/index.xhtml"
               logo="pictures/Books.png"
               title="Books"
@@ -84,11 +93,21 @@ const NewProject = (props) => {
           <Grid container xs={12} spacing={5} rowSpacing={5}>
           <Grid xs />
           <Grid xs={6}>
+
+          <TitleCard
+              link="http://54.198.229.115:8080/Cocktails-Badiang/index.xhtml"
+              logo="pictures/Cocktails.png"
+              title="Cocktails"
+              dev="Is hosted on Amazon EC2 instance along with Wildfly which utilizes MySQL database to host favorite cocktails recipes and calls The CocktailsDB API and Open Brewery API to find new cocktails/breweries to add or browse."
+              image="pictures/Cocktails.png"
+              frame = {["Jakarta EE", "MySQL","Wildfly", "Gradle", "EC2"]}
+            />
+
             <TitleCard
               link="http://54.198.229.115:8080/Books-Badiang/index.xhtml"
               logo="pictures/Books.png"
               title="Books"
-              dev="Is  hosted on Amazon EC2 instance along with Wildfly which utilizes MySQL database to host favorite book data and calls Google Book API to find new books to add."
+              dev="Is hosted on Amazon EC2 instance along with Wildfly which utilizes MySQL database to host favorite book data and calls Google Book API to find new books to add."
               image="pictures/Books.png"
               frame = {["Jakarta EE", "MySQL","Wildfly", "Gradle", "EC2"]}
             />
