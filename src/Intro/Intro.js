@@ -97,7 +97,7 @@ function Intro() {
               </Grid>
               {/* //Description */}
               <Typography variant="body2" textAlign={"start"} color="#FFD3AB">
-                Full Stack Engineer | Undergraduate Student
+                Software Developer | Undergraduate Student
               </Typography>
               {/* //Icon Buttons */}
               <div style={{ marginTop: "15px" }}>
