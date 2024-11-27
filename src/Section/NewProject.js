@@ -25,6 +25,14 @@ const NewProject = (props) => {
           <Grid item xs>
           
           <TitleCard
+              link="http://54.198.229.115:8080/Businesses-Badiang/"
+              logo="pictures/Businesses.png"
+              title="Businesses"
+              dev="Allows user to create and sign-in with Two-Factor Authentication. The user can create, read, update, and delete their personalized favorite businesses. The user can also search for new businesses to add to their list."
+              image="pictures/Businesses.png"
+              frame = {["Jakarta EE", "MySQL","Wildfly", "Gradle", "EC2"]}
+            />
+          <TitleCard
               link="http://54.198.229.115:8080/Cocktails-Badiang/index.xhtml"
               logo="pictures/Cocktails.png"
               title="Cocktails"
@@ -94,6 +102,14 @@ const NewProject = (props) => {
           <Grid xs />
           <Grid xs={6}>
 
+          <TitleCard
+              link="http://54.198.229.115:8080/Businesses-Badiang/"
+              logo="pictures/Businesses.png"
+              title="Businesses"
+              dev="Allows user to create and sign-in with Two-Factor Authentication. The user can create, read, update, and delete their personalized favorite businesses. The user can also search for new businesses to add to their list."
+              image="pictures/Businesses.png"
+              frame = {["Jakarta EE", "MySQL","Wildfly", "Gradle", "EC2"]}
+            />
           <TitleCard
               link="http://54.198.229.115:8080/Cocktails-Badiang/index.xhtml"
               logo="pictures/Cocktails.png"
