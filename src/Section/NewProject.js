@@ -25,35 +25,17 @@ const NewProject = (props) => {
           <Grid item xs>
           
           <TitleCard
-              link="http://54.198.229.115:8080/Businesses-Badiang/"
-              logo="pictures/Businesses.png"
-              title="Businesses"
-              dev="Allows user to create and sign-in with Two-Factor Authentication. The user can create, read, update, and delete their personalized favorite businesses. The user can also search for new businesses to add to their list."
-              image="pictures/Businesses.png"
-              frame = {["Jakarta EE", "MySQL","Wildfly", "Gradle", "EC2"]}
-            />
-          <TitleCard
-              link="http://54.198.229.115:8080/Cocktails-Badiang/index.xhtml"
-              logo="pictures/Cocktails.png"
-              title="Cocktails"
-              dev="Is hosted on Amazon EC2 instance along with Wildfly which utilizes MySQL database to host favorite cocktails recipes and calls The CocktailsDB API and Open Brewery API to find new cocktails/breweries to add or browse."
-              image="pictures/Cocktails.png"
-              frame = {["Jakarta EE", "MySQL","Wildfly", "Gradle", "EC2"]}
-            />
-
-          <TitleCard
-              link="http://54.198.229.115:8080/Books-Badiang/index.xhtml"
-              logo="pictures/Books.png"
-              title="Books"
-              dev="Is  hosted on Amazon EC2 instance along with Wildfly which utilizes MySQL database to host favorite book data and calls Google Book API to find new books to add."
-              image="pictures/Books.png"
-              frame = {["Jakarta EE", "MySQL","Wildfly", "Gradle", "EC2"]}
-            />
-        
+          link="https://ascendatvt.org"
+          logo="pictures/ascend.png"
+          title="Ascend at Virginia Tech Website"
+          dev="Utilizes Amazon Web Services to host and hold relevant data within the database. Admins can modify database through user login and perform CRUD operations. This website is being used by active/future members of the club."
+          image="pictures/ascend.png"
+          frame = {["AWS", "Docker", "Express","React", "MaterialUi"]}
+        />
         <TitleCard
           link="https://vtfasa.org"
           logo="pictures/vtfasaLogo.png"
-          title="Fasa Website"
+          title="Filipino American Student Association Website"
           dev="The club Filipino American Student Association tasked me to build a website that can serve as a hub for the active/future members of the club. The website took three months to create and was continuously updated throughout the following  school year."
           image="pictures/vtfasa.png"
           frame = {["React", "MaterialUi"]}
@@ -103,30 +85,13 @@ const NewProject = (props) => {
           <Grid xs={6}>
 
           <TitleCard
-              link="http://54.198.229.115:8080/Businesses-Badiang/"
-              logo="pictures/Businesses.png"
-              title="Businesses"
-              dev="Allows user to create and sign-in with Two-Factor Authentication. The user can create, read, update, and delete their personalized favorite businesses. The user can also search for new businesses to add to their list."
-              image="pictures/Businesses.png"
-              frame = {["Jakarta EE", "MySQL","Wildfly", "Gradle", "EC2"]}
-            />
-          <TitleCard
-              link="http://54.198.229.115:8080/Cocktails-Badiang/index.xhtml"
-              logo="pictures/Cocktails.png"
-              title="Cocktails"
-              dev="Is hosted on Amazon EC2 instance along with Wildfly which utilizes MySQL database to host favorite cocktails recipes and calls The CocktailsDB API and Open Brewery API to find new cocktails/breweries to add or browse."
-              image="pictures/Cocktails.png"
-              frame = {["Jakarta EE", "MySQL","Wildfly", "Gradle", "EC2"]}
-            />
-
-            <TitleCard
-              link="http://54.198.229.115:8080/Books-Badiang/index.xhtml"
-              logo="pictures/Books.png"
-              title="Books"
-              dev="Is hosted on Amazon EC2 instance along with Wildfly which utilizes MySQL database to host favorite book data and calls Google Book API to find new books to add."
-              image="pictures/Books.png"
-              frame = {["Jakarta EE", "MySQL","Wildfly", "Gradle", "EC2"]}
-            />
+          link="https://ascendatvt.org"
+          logo="pictures/ascend.png"
+          title="Ascend at Virginia Tech Website"
+          dev="Utilizes Amazon Web Services to host and hold relevant data within the database. Admins can modify database through user login and perform CRUD operations. This website is being used by active/future members of the club."
+          image="pictures/ascend.png"
+          frame = {["AWS", "Docker", "Express","React", "MaterialUi"]}
+        />
             <TitleCard
               link="https://vtfasa.org"
               logo="pictures/vtfasaLogo.png"
