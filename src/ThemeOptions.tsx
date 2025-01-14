@@ -15,7 +15,7 @@ export const themeOptions: ThemeOptions = {
     divider: '#FFBF46',
     background: {
       paper: '#4F524D',
-      default: '#A1A99D',
+      default: '#222222',
     },
     error: {
       main: '#cb6a6a',
