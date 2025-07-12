@@ -1,26 +1,37 @@
 import { ThemeOptions } from '@mui/material/styles';
 
+declare module '@mui/material/styles' {
+  interface Palette {
+    secondaryContainer?: string;
+  }
+  interface PaletteOptions {
+    secondaryContainer?: string;
+  }
+}
+
 export const themeOptions: ThemeOptions = {
   palette: {
     mode: 'light',
     primary: {
-      main: '#FFFFFF',
+      main: '#000000',
     },
     secondary: {
       main: '#4F524D',
     },
+    secondaryContainer: '#D5E8CF',
     text: {
-      primary: 'rgba(255,255,255,0.87)',
+      primary: 'rgb(0, 0, 0)',
     },
     divider: '#FFBF46',
     background: {
       paper: '#4F524D',
-      default: '#222222',
+      default: '#F7FBF1',
     },
     error: {
       main: '#cb6a6a',
     },
   },
+  
 
   breakpoints: {
     // Add your custom breakpoints here
@@ -33,9 +44,9 @@ export const themeOptions: ThemeOptions = {
     },
   },
   typography: {
-    fontFamily: 'Inria Serif',
+    fontFamily: 'Monomaniac One',
     h1: {
-      fontFamily: 'Jura',
+      fontFamily: 'Monofett',
       fontWeight: 400,
       fontSize: '1rem',
       '@media (min-width:600px)': {

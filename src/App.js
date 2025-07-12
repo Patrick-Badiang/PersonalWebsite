@@ -4,15 +4,12 @@
 
 import { ThemeProvider } from "@emotion/react";
 import "./App.css";
-import Intro from "./Intro/Intro.js";
-import { CssBaseline, createTheme } from "@mui/material";
+import {  Box, CssBaseline, Typography, createTheme } from "@mui/material";
 import { themeOptions } from "./ThemeOptions.tsx";
-import NewSection from "./Section/NewSection.js";
-import NewProject from "./Section/NewProject.js";
 
 
 import "resize-observer-polyfill/dist/ResizeObserver.global.js";
-import ContactCard from "./Section/ContactCard.js";
+import AppHeader from "./Components/AppHeader.js";
 
 function App() {
   // const handleScrollToSection = (sectionRef) => {
@@ -28,23 +25,21 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
 
-        <Intro />
+        <AppHeader/>
+        <Typography variant="h1" align="start" sx={{ margin: 4 }}>
+          Patrick Vyn Badiang
+        </Typography>
+        <Box 
+        component="img"
+        src="pictures/release2.0/laptop.png"
+        sx= {{
+          objectFit: "contain",
+        }}
+        mt={3}
+        width={"100%"} height={"600px"}
+        >
 
-      <div >
-        <NewSection
-          title="Projects"
-          element={<NewProject />}
-        />
-      </div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignContent: "center",
-          marginBottom: "10vh",
-        }}>
-          <ContactCard/>
-        </div>
+        </Box>
     </ThemeProvider>
   );
 }
