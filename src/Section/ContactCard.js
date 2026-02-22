@@ -1,23 +1,13 @@
-import {
-  Button,
-  CardContent,
-  TextField,
-  Typography,
-  Paper,
-  Alert,
-  Snackbar,
-} from "@mui/material";
-import Grid from "@mui/material/Unstable_Grid2/Grid2.js";
+import { Button, CardContent, TextField, Typography, Paper, Alert, Snackbar, Box } from "@mui/material";
+import Grid from "@mui/material/Unstable_Grid2";
 import SendIcon from "@mui/icons-material/Send";
+import CheckIcon from "@mui/icons-material/Check";
 import emailjs from "@emailjs/browser";
-import React, { useRef, useState } from "react";
-import CheckIcon from '@mui/icons-material/Check';
-
+import { useRef, useState } from "react";
 
 function ContactCard() {
   const form = useRef();
-
-  const [open, setOpen] = useState(false); // State for Snackbar visibility
+  const [open, setOpen] = useState(false);
 
   const handleClose = () => setOpen(false);
 
@@ -30,85 +20,73 @@ function ContactCard() {
       })
       .then(
         () => {
-          console.log("SUCCESS!");
           setOpen(true);
-
           form.current.reset();
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          console.error("Email send failed:", error.text);
         }
       );
   };
 
   return (
     <>
-    <form ref={form} onSubmit={sendEmail} style={{width: "50%"}}>
-      <Paper elevation={5}>
-        <CardContent>
-          <Grid container direction={"column"} spacing={4}>
-            <Grid item>
-              <Typography variant="body1">Name</Typography>
-              <TextField
-                fullWidth
-                id="outlined-basic"
-                label="Enter Your Name"
-                variant="outlined"
-                type = "text"
-                name="user_name"
-                size = "small"
-
-              />
+      <form ref={form} onSubmit={sendEmail} style={{ width: "50%" }}>
+        <Paper elevation={5}>
+          <CardContent>
+            <Grid container direction="column" spacing={4}>
+              <Grid>
+                <Typography variant="body1">Name</Typography>
+                <TextField
+                  fullWidth
+                  label="Enter Your Name"
+                  variant="outlined"
+                  type="text"
+                  name="user_name"
+                  size="small"
+                  required
+                />
+              </Grid>
+              <Grid>
+                <Typography variant="body1">Email</Typography>
+                <TextField
+                  fullWidth
+                  variant="outlined"
+                  label="Enter Your Email"
+                  type="email"
+                  name="user_email"
+                  size="small"
+                  required
+                />
+              </Grid>
+              <Grid>
+                <Typography variant="body1">Message</Typography>
+                <TextField
+                  fullWidth
+                  variant="outlined"
+                  name="message"
+                  label="Enter Your Message"
+                  multiline
+                  rows={5}
+                  required
+                />
+              </Grid>
+              <Grid>
+                <Box display="flex" justifyContent="flex-end">
+                  <Button color="secondary" variant="contained" type="submit">
+                    Submit <SendIcon sx={{ marginLeft: "10px" }} />
+                  </Button>
+                </Box>
+              </Grid>
             </Grid>
-            <Grid item>
-              <Typography  variant="body1">Email</Typography>
-              <TextField
-                fullWidth
-                id="outlined-basic"
-                variant="outlined"
-                label="Enter Your Email"
-                type="email" name="user_email"
-                size = "small"
-              />
-            </Grid>
-
-            <Grid item>
-              <Typography variant="body1">Message</Typography>
-              <TextField
-                fullWidth
-                id="outlined-multiline-static"
-                variant="outlined"
-                name="message"
-                size = "small"
-                label="Enter Your Message"
-
-                rows={5}
-              />
-            </Grid>
-            <Grid item>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "flex-end",
-                  alignContent: "center",
-                }}
-              >
-                <Button color="secondary" variant="contained"
-                type="submit" value="Send" >
-                  Submit <SendIcon sx = {{marginLeft: "10px"}} />
-                </Button>
-              </div>
-            </Grid>
-          </Grid>
-        </CardContent>
-      </Paper>
+          </CardContent>
+        </Paper>
       </form>
       <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
-        <Alert severity="success" icon={<CheckIcon fontSize="body1" />}>
-          Here is a gentle confirmation that your action was successful.
+        <Alert severity="success" icon={<CheckIcon />}>
+          Your message has been sent successfully!
         </Alert>
       </Snackbar>
-
     </>
   );
 }

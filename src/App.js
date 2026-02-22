@@ -1,50 +1,33 @@
-/**
- * Navigation is a sidebar, clicks to go to specific part of  page
- */
-
-import { ThemeProvider } from "@emotion/react";
-import "./App.css";
-import Intro from "./Intro/Intro.js";
-import { CssBaseline, createTheme } from "@mui/material";
-import { themeOptions } from "./ThemeOptions.tsx";
-import NewSection from "./Section/NewSection.js";
-import NewProject from "./Section/NewProject.js";
-
-
+import { ThemeProvider } from "@mui/material/styles";
+import { CssBaseline, createTheme, Box, Tabs, Tab, IconButton } from "@mui/material";
+import { Brightness4, Brightness7 } from "@mui/icons-material";
+import { useState, useMemo } from "react";
+import PortfolioApp from "./movedOver/PortfolioApp";
+import { getLightTheme, getDarkTheme } from "./ThemeOptions";
 import "resize-observer-polyfill/dist/ResizeObserver.global.js";
-import ContactCard from "./Section/ContactCard.js";
 
 function App() {
-  // const handleScrollToSection = (sectionRef) => {
-  //   if (sectionRef.current) {
-  //     sectionRef.current.scrollIntoView({ behavior: "smooth" });
-  //   }
-  //   console.log("Scrolling to:", sectionRef);
-  // };
+  const [activeTab, setActiveTab] = useState(0);
+  const [darkMode, setDarkMode] = useState(false);
 
-  const theme = createTheme(themeOptions);
+  const theme = useMemo(
+    () => createTheme(darkMode ? getDarkTheme() : getLightTheme()),
+    [darkMode]
+  );
 
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-
-        <Intro />
-
-      <div >
-        <NewSection
-          title="Projects"
-          element={<NewProject />}
-        />
-      </div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignContent: "center",
-          marginBottom: "10vh",
-        }}>
-          <ContactCard/>
-        </div>
+      <Box sx={{ borderBottom: 1, borderColor: 'divider', position: 'sticky', top: 0, bgcolor: 'background.default', zIndex: 1000, display: 'flex', alignItems: 'center', justifyContent: 'space-between', px: 2 }}>
+        <Tabs value={activeTab} onChange={(e, v) => setActiveTab(v)}>
+          <Tab label="Material UI View" />
+          <Tab label="Portfolio View" />
+        </Tabs>
+        <IconButton onClick={() => setDarkMode(!darkMode)} color="inherit">
+          {darkMode ? <Brightness7 /> : <Brightness4 />}
+        </IconButton>
+      </Box>
+        <PortfolioApp />
     </ThemeProvider>
   );
 }
